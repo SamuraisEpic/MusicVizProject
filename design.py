@@ -1,11 +1,11 @@
 '''
-i have no idea how design doc is gonna work, but here we go
+i don't know how design will work, but we'll give this thing a shot. have to reset because my idiocy
 
-so the idea is to have a qt window for the user to interact with to provide files and whatnot.
-ideally it'd also have support for cli switches of you prefer a terminal, and the visualization would be in a seperate window, similar to qemu
-i dont know how i'd go about doing that yet, but sys is used for switch support in the event i do later on.
+<proposal goes here>
+various expanding points
 
-resource for a plain window is here: https://www.pythonguis.com/tutorials/creating-your-first-pyqt-window/
+for one, qt is picked as it is the preferred gui framework for KDE apps, and on a plasma based system (or multiple)  i thought that to be the most logical choice.
 
+waveform will be provided through a library, and will be transhformed into an animation somehow. that part is to still be determined, but i have a few ideas in mind, that in clude half height bars and using those to make a small animation.
 
 '''
