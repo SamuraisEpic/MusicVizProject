@@ -20,31 +20,34 @@ window.show()
 #now start the event loop
 gui.exec()
 '''
-from tkinter import * # geeksforgeeks
+from tkinter import * 
+
+from tkinter.filedialog import askopenfilename #filepicker
 
 #make a window 
-initial = Tk()
+mainwindow = Tk()
 
 #give it a title
-initial.title("wfg working window")
+mainwindow.title("wfg working window")
 
 # set size (wxl)
-initial.geometry('640x480')
+mainwindow.geometry('640x480')
 
 # add some text/a label
-txt = Label(initial, text = "there is text here now")
+txt = Label(mainwindow, text = "waveform generator")
 txt.grid()
 
 #button and stuff
-    #define what clicked is make it easier
-def clicked():
-    txt.configure(text = "the button got clicked")
+    #file picker function
+def filepicker():
+    filename = askopenfilename()
+    print(filename) #print filename to the console (this is just a standin to make sure it actually works)
 
-btn = Button(initial, text = "has this been clicked?", command = clicked)
+btn = Button(mainwindow, text = "open file picker", command = filepicker) #button to open file picker/choose audiofile
 
 #set grid order
-btn.grid(column = 2, row = 0)
+btn.grid(column = 0, row = 2)
 
 #execute
-initial.mainloop()
+mainwindow.mainloop()
 
