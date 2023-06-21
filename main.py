@@ -20,7 +20,7 @@ mainwindow.title("wfg working window")
 mainwindow.geometry('640x480')
 
 # add some text/a label
-txt = Label(mainwindow, text = "waveform generator")
+txt = Label(mainwindow, text = "waveform generator\n instrusctions: click \"generate!\" and pick a file")
 txt.grid()
 
 #button and stuff
