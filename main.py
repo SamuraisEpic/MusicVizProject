@@ -23,11 +23,11 @@ txt.grid()
 
 #button and stuff
     #file picker function
-def filepicker():
+def generate():
     filename = askopenfilename()
-    print(filename) #print filename to the console (this is just a standin to make sure it actually works)
+    #okie now that we have a path we can start doing fun stuff
 
-btn = Button(mainwindow, text = "open file picker", command = filepicker) #button to open file picker/choose audiofile
+btn = Button(mainwindow, text = "generate!", command = generate) #button to open file picker/choose audiofile
 
 #set grid order
 btn.grid(column = 0, row = 2)
